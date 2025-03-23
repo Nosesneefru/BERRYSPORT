@@ -21,7 +21,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #333;
+    background-color: #002e51;
     color: white;
     text-align: center;
     display: flex;
@@ -40,7 +40,7 @@ header .header{
 }
 
 .header h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: "Emblema One", system-ui;
     font-weight: 400;
     font-style: normal;

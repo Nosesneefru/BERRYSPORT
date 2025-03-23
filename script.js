@@ -1,15 +1,14 @@
 const products = [
-    { id: 1, brand: 'nike', name: 'Nike Air Max', image: 'imagenes/botin2.jpg', description: 'Zapatillas cómodas y modernas.' },
-    { id: 2, brand: 'adidas', name: 'Adidas Ultraboost', image: 'asset/img/IMG-20240323-WA0155.jpg', description: 'Ideales para correr largas distancias.' },
-    { id: 3, brand: 'puma', name: 'Puma Suede', image: 'asset/img/IMG-20240323-WA0156.jpg', description: 'Clásicas y elegantes.' },
-    { id: 4, brand: 'reebok', name: 'Reebok Nano X', image: 'asset/img/IMG-20240323-WA0169.jpg', description: 'Perfectas para el gimnasio.' },
-    { id: 5, brand: 'nike', name: 'Nike Revolution', image: 'asset/img/IMG-20240323-WA0195.jpg', description: 'Diseño ligero y resistente.' },
-    { id: 6, brand: 'nike', name: 'Nike Air Max', image: 'asset/img/IMG-20240323-WA0153.jpg', description: 'Zapatillas cómodas y modernas.' },
-    { id: 7, brand: 'adidas', name: 'Adidas Ultraboost', image: 'asset/img/IMG-20240323-WA0155.jpg', description: 'Ideales para correr largas distancias.' },
-    { id: 8, brand: 'puma', name: 'Puma Suede', image: 'asset/img/IMG-20240323-WA0156.jpg', description: 'Clásicas y elegantes.' },
-    { id: 9, brand: 'nike', name: 'Nike Air Max', image: 'asset/img/IMG-20240323-WA0153.jpg', description: 'Zapatillas cómodas y modernas.' },
-    { id: 10, brand: 'adidas', name: 'Adidas Ultraboost', image: 'asset/img/IMG-20240323-WA0155.jpg', description: 'Ideales para correr largas distancias.' },
-    { id: 11, brand: 'puma', name: 'Puma Suede', image: 'asset/img/IMG-20240323-WA0156.jpg', description: 'Clásicas y elegantes.' }
+    { id: 1, brand: 'nike', name: 'Nike', image: 'imagenes/Nike 02.jpg' },
+    { id: 2, brand: 'adidas', name: 'Adidas F50', image: 'imagenes/Adidas f50 1.jpg' },
+    { id: 3, brand: 'puma', name: 'Puma', image: 'imagenes/Puma 3.jpg'},
+    { id: 4, brand: 'nike', name: 'Nike', image: 'imagenes/Nike 03.jpg' },
+    { id: 5, brand: 'nike', name: 'Nike', image: 'imagenes/Nike 04.jpg'},
+    { id: 6, brand: 'adidas', name: 'Adidas F50', image: 'imagenes/Adidas f504.jpg'},
+    { id: 7, brand: 'puma', name: 'Puma', image: 'imagenes/PUMA 2.jpg'},
+    { id: 8, brand: 'nike', name: 'Nike', image: 'imagenes/Nike 07.jpg'},
+    { id: 9, brand: 'adidas', name: 'Adidas F50', image: 'imagenes/Adidas f503.jpg'},
+    { id: 10, brand: 'puma', name: 'Puma', image: 'imagenes/PUMA 1.jpg'}
 ];
 
 const catalog = document.getElementById('catalog');
@@ -25,7 +24,6 @@ function renderProducts(filter) {
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
-            <p>${product.description}</p>
         `;
         catalog.appendChild(productCard);
     });
